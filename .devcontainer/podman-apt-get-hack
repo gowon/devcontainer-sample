@@ -1,0 +1,5 @@
+#!/usr/bin/env bash
+# workaround to a bug in podman that causes /tmp to have the wrong permissions
+# ref: https://github.com/podman-container-tools/buildah/issues/6503#issuecomment-4422156323
+mkdir -p /tmp/ && chmod 1777 /tmp/
+exec /usr/bin/apt-get "$@"

@@ -1,0 +1,56 @@
+{
+	"name": "dotnet-devcontainer",
+	"build": {
+		"dockerfile": "Containerfile"
+	},
+	"mounts": [
+		"source=${localEnv:HOME}${localEnv:USERPROFILE}/.aws,target=/home/vscode/.aws,type=bind,consistency=cached",
+		"source=${localEnv:HOME}${localEnv:USERPROFILE}/.kiro,target=/home/vscode/.kiro,type=bind,consistency=cached"
+	],
+	"features": {
+		"ghcr.io/devcontainer-community/devcontainer-features/aws-cli:1": {},
+		"ghcr.io/devcontainers/features/docker-outside-of-docker:1": {},
+		"ghcr.io/devcontainer-config/features/dot-config:4": {},
+		"ghcr.io/srzstephen/devcontainer-features/kiro-cli:1": {},
+		"ghcr.io/devcontainer-community/devcontainer-features/astral.sh-uv:1": {}
+	},
+	// Use this environment variable if you need to bind mount your local source code into a new container.
+	"remoteEnv": {
+		"LOCAL_WORKSPACE_FOLDER": "${localWorkspaceFolder}"
+	},
+	"customizations": {
+		"vscode": {
+			"extensions": [
+				"formulahendry.acp-client",
+				"mk12.better-git-line-blame",
+				"ms-azuretools.vscode-containers",
+				"cucumberopen.cucumber-official",
+				"hediet.vscode-drawio",
+				"editorconfig.editorconfig",
+				"mhutchie.git-graph",
+				"donjayamanne.githistory",
+				"yzhang.markdown-all-in-one",
+				"davidanson.vscode-markdownlint",
+				"redhat.vscode-xml",
+				"redhat.vscode-yaml",
+				"streetsidesoftware.code-spell-checker",
+				"ms-dotnettools.csharp",
+				"humao.rest-client",
+				"ms-vscode.live-server"
+			],
+			"settings": {
+				"terminal.integrated.defaultProfile.linux": "zsh",
+				"terminal.integrated.profiles.linux": {
+					"zsh": {
+						"path": "/usr/bin/zsh"
+					}
+				}
+			}
+		}
+	},
+	"postCreateCommand": "bash .devcontainer/postCreate.sh"
+	// Use 'forwardPorts' to make a list of ports inside the container available locally.
+	// "forwardPorts": [],
+	// Uncomment to connect as root instead. More info: https://aka.ms/dev-containers-non-root.
+	// "remoteUser": "root"
+}

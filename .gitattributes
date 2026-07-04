@@ -1,0 +1,8 @@
+* text=auto eol=lf
+
+# Windows batch scripts
+*.bat text eol=crlf
+*.cmd text eol=crlf
+
+# Visual Studio solution files
+*.sln text eol=crlf

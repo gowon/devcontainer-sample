@@ -1,0 +1,21 @@
+{
+    "recommendations": [
+        "formulahendry.acp-client",
+        "mk12.better-git-line-blame",
+        "ms-azuretools.vscode-containers",
+        "cucumberopen.cucumber-official",
+        "ms-vscode-remote.remote-containers",
+        "hediet.vscode-drawio",
+        "editorconfig.editorconfig",
+        "mhutchie.git-graph",
+        "donjayamanne.githistory",
+        "yzhang.markdown-all-in-one",
+        "davidanson.vscode-markdownlint",
+        "redhat.vscode-xml",
+        "redhat.vscode-yaml",
+        "streetsidesoftware.code-spell-checker",
+        "ms-dotnettools.csharp",
+        "humao.rest-client",
+        "ms-vscode.live-server"
+    ]
+}

@@ -1,0 +1,35 @@
+# ref: https://github.com/devcontainers/images/blob/main/src/dotnet/history/dev.md
+FROM mcr.microsoft.com/devcontainers/dotnet:dev-10.0-noble
+
+## install dependencies
+RUN apt-get update && apt-get install -y --no-install-recommends \
+    curl \
+    ca-certificates \
+    && rm -rf /var/lib/apt/lists/*
+
+## install additional .net SDKs and runtimes
+# ref: https://learn.microsoft.com/en-us/dotnet/core/install/linux-scripted-manual#scripted-install
+# ref: https://learn.microsoft.com/en-us/dotnet/core/versions/selection#values
+ENV DOTNET_ROOT=/usr/share/dotnet
+ENV DOTNET_ROLL_FORWARD=LatestPatch
+ENV PATH=$PATH:$DOTNET_ROOT:$DOTNET_ROOT/tools
+RUN curl -sSL https://dot.net/v1/dotnet-install.sh -o dotnet-install.sh \
+    && chmod +x dotnet-install.sh \
+    && ./dotnet-install.sh --channel 8.0 --runtime aspnetcore --install-dir $DOTNET_ROOT \
+    && ./dotnet-install.sh --channel 11.0 --quality preview --install-dir $DOTNET_ROOT \
+    && rm dotnet-install.sh
+
+## install Node.js
+ARG NODE_VERSION=24.18.0
+RUN bash -c "source /usr/local/share/nvm/nvm.sh \
+    && nvm install ${NODE_VERSION} --latest-npm \
+    && nvm alias default ${NODE_VERSION} \
+    && nvm use default"
+
+# install Starship shell prompt
+RUN curl -fsSL https://starship.rs/install.sh | sh -s -- -y
+
+# workaround to a bug in podman that causes /tmp to have the wrong permissions
+# ref: https://github.com/podman-container-tools/buildah/issues/6503#issuecomment-4422156323
+COPY ./podman-apt-get-hack /usr/local/bin/apt-get
+RUN sudo chmod +x /usr/local/bin/apt-get

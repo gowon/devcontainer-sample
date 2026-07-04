@@ -1,0 +1,67 @@
+# Get editor completions and validation based on the official Starship schema
+"$schema" = 'https://starship.rs/config-schema.json'
+
+# # Global configurations
+# add_newline = true
+# move_to_new_line = true
+# 
+# # Core prompt layout structure 
+# format = """
+# $os\
+# $username\
+# $hostname\
+# $directory\
+# $git_branch\
+# $git_status\
+# $python\
+# $nodejs\
+# $rust\
+# $line_break\
+# $character"""
+# 
+# # Configure the input symbol indicator
+# [character]
+# success_symbol = "[❯](bold green)"
+# error_symbol = "[❯](bold red)"
+# 
+# # Directory path configurations
+# [directory]
+# truncation_length = 3
+# truncate_to_repo = true
+# style = "bold cyan"
+# read_only = " 🔒"
+# 
+# # Git configurations
+# [git_branch]
+# symbol = " "
+# style = "bold purple"
+# 
+# [git_status]
+# style = "bold red"
+# ahead = "⇡${count}"
+# behind = "⇣${count}"
+# 
+# # Operating System Icon (Requires Nerd Fonts)
+# [os]
+# disabled = false
+# style = "bold white"
+# 
+# # System User Details
+# [username]
+# style_user = "bold green"
+# format = "[$user]($style) "
+# disabled = false
+# show_always = false # Only shows user details when inside an SSH session
+# 
+# # Programming Languages & Environment Toolchains
+# [python]
+# symbol = " "
+# style = "bold yellow"
+# 
+# [nodejs]
+# symbol = " "
+# style = "bold green"
+# 
+# [rust]
+# symbol = " "
+# style = "bold red"

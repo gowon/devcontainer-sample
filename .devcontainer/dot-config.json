@@ -1,0 +1,8 @@
+{
+    "zsh": {
+        ".zshrc": "/home/vscode/.zshrc"
+    },
+    "starship":{
+        "starship.toml": "/home/vscode/.config/starship.toml"
+    }
+}
