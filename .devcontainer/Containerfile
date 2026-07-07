@@ -24,7 +24,8 @@ ARG NODE_VERSION=24.18.0
 RUN bash -c "source /usr/local/share/nvm/nvm.sh \
     && nvm install ${NODE_VERSION} --latest-npm \
     && nvm alias default ${NODE_VERSION} \
-    && nvm use default"
+    && nvm use default \
+    && nvm install-latest-npm"
 
 # install Starship shell prompt
 RUN curl -fsSL https://starship.rs/install.sh | sh -s -- -y

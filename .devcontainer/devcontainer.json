@@ -35,6 +35,7 @@
 				"redhat.vscode-yaml",
 				"streetsidesoftware.code-spell-checker",
 				"ms-dotnettools.csharp",
+				"ms-dotnettools.csdevkit",
 				"humao.rest-client",
 				"ms-vscode.live-server"
 			],
