@@ -16,9 +16,9 @@
       "integrity": "sha256:d9ca770ccb218e619d5725fd50f00dfacdf582d92a8c3901f11b53b1caddd878"
     },
     "ghcr.io/devcontainers/features/docker-outside-of-docker:1": {
-      "version": "1.10.0",
-      "resolved": "ghcr.io/devcontainers/features/docker-outside-of-docker@sha256:c2c2cf829505ead8e4892c88c31b6594ae94a2bbb209e16e1fac456c1a3a624e",
-      "integrity": "sha256:c2c2cf829505ead8e4892c88c31b6594ae94a2bbb209e16e1fac456c1a3a624e"
+      "version": "1.10.1",
+      "resolved": "ghcr.io/devcontainers/features/docker-outside-of-docker@sha256:698f5900fac471e046c6e9d4333fec88c0e8d952c713494fa0712dce80baeca0",
+      "integrity": "sha256:698f5900fac471e046c6e9d4333fec88c0e8d952c713494fa0712dce80baeca0"
     },
     "ghcr.io/srzstephen/devcontainer-features/kiro-cli:1": {
       "version": "1.0.1",
