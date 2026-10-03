@@ -10,15 +10,15 @@
       "resolved": "ghcr.io/devcontainer-community/devcontainer-features/aws-cli@sha256:ccd8f9d07b89d3cff21482058bdd2ea5a84f0d8904cc655a73a111b8ffa665e5",
       "integrity": "sha256:ccd8f9d07b89d3cff21482058bdd2ea5a84f0d8904cc655a73a111b8ffa665e5"
     },
-    "ghcr.io/devcontainer-config/features/dot-config:4": {
-      "version": "4.0.0",
-      "resolved": "ghcr.io/devcontainer-config/features/dot-config@sha256:d9ca770ccb218e619d5725fd50f00dfacdf582d92a8c3901f11b53b1caddd878",
-      "integrity": "sha256:d9ca770ccb218e619d5725fd50f00dfacdf582d92a8c3901f11b53b1caddd878"
+    "ghcr.io/devcontainer-config/features/dot-config:5": {
+      "version": "5.0.0",
+      "resolved": "ghcr.io/devcontainer-config/features/dot-config@sha256:dfbe76767fb0e284f078a06e7857734cc765daf5ae4e5c4ea4152105e861dd0b",
+      "integrity": "sha256:dfbe76767fb0e284f078a06e7857734cc765daf5ae4e5c4ea4152105e861dd0b"
     },
     "ghcr.io/devcontainers/features/docker-outside-of-docker:1": {
-      "version": "1.10.0",
-      "resolved": "ghcr.io/devcontainers/features/docker-outside-of-docker@sha256:c2c2cf829505ead8e4892c88c31b6594ae94a2bbb209e16e1fac456c1a3a624e",
-      "integrity": "sha256:c2c2cf829505ead8e4892c88c31b6594ae94a2bbb209e16e1fac456c1a3a624e"
+      "version": "1.10.1",
+      "resolved": "ghcr.io/devcontainers/features/docker-outside-of-docker@sha256:698f5900fac471e046c6e9d4333fec88c0e8d952c713494fa0712dce80baeca0",
+      "integrity": "sha256:698f5900fac471e046c6e9d4333fec88c0e8d952c713494fa0712dce80baeca0"
     },
     "ghcr.io/srzstephen/devcontainer-features/kiro-cli:1": {
       "version": "1.0.1",
