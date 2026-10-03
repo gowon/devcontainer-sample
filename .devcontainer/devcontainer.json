@@ -10,7 +10,7 @@
 	"features": {
 		"ghcr.io/devcontainer-community/devcontainer-features/aws-cli:1": {},
 		"ghcr.io/devcontainers/features/docker-outside-of-docker:1": {},
-		"ghcr.io/devcontainer-config/features/dot-config:4": {},
+		"ghcr.io/devcontainer-config/features/dot-config:5": {},
 		"ghcr.io/srzstephen/devcontainer-features/kiro-cli:1": {},
 		"ghcr.io/devcontainer-community/devcontainer-features/astral.sh-uv:1": {}
 	},
